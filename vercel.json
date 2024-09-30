@@ -8,12 +8,12 @@
     ],
     "routes": [
         {
-            "src": "/api/(.*)",  
+            "src": "/api/(.*)",  // Assuming your API routes are prefixed with /api
             "dest": "/backend/app.js"
         },
         {
             "src": "/(.*)", 
-            "dest": "/frontend" 
+            "dest": "/frontend/dist/$1" // Serve the frontend build files
         }
     ]
 }
