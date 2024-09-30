@@ -5,7 +5,7 @@ const cors=require('cors')
 
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/library', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://rudra:Ibm123@rudra.i2liyup.mongodb.net/auth?retryWrites=true&w=majority&appName=Rudra', { useNewUrlParser: true, useUnifiedTopology: true })
    .then(() => console.log('MongoDB connected'))
    .catch(err => console.log(err));
 
